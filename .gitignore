@@ -2,6 +2,8 @@
 /.pnp
 .pnp.js
 
+/dist
+
 .DS_Store
 .env.local
 .env.development.local

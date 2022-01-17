@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ListView from './views/ListView';
 import DetailView from './views/DetailView';
@@ -6,7 +6,7 @@ import MainLayout from './layouts/MainLayout';
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route element={<MainLayout />}>
           <Route exact path='/' element={<ListView />} />
@@ -16,7 +16,7 @@ function App() {
           />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
