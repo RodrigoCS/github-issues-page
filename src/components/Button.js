@@ -23,7 +23,7 @@ const StyledButton = styled.button`
 function Button(props) {
   function handleClick(e) {
     if (props.disabled) return;
-    props.onClick(e);
+    if (typeof props.onClick === 'function') props.onClick(e);
   }
   return (
     <StyledButton {...props} onClick={handleClick}>
