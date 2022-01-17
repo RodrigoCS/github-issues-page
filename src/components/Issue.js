@@ -40,7 +40,7 @@ function Issue({ issue, repo, owner }) {
       <Title>
         <Status state={issue.state} />
         <h3>
-          <a href={`/issue/${owner}/${repo}/${issue.number}`}>{issue.title}</a>
+          <a href={`#/issue/${owner}/${repo}/${issue.number}`}>{issue.title}</a>
         </h3>
       </Title>
       <Content>
