@@ -17,3 +17,5 @@ For styling I mainly used `styled-components`.
 It uses React Router’s HashRouter in order for it to work on GitHub Pages.
 
 It uses `react-markdown`, `react-syntax-highlighter` and `remark-gfm`, for parsing the markdown from GitHub issues and comments.
+
+It also has a simple cache system, I added it with development porpuses only since unauthenticaded API calls to github where hitting the limit, decided to leave it there and added a `Clear Cache` button.
